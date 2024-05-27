@@ -1,0 +1,118 @@
+
+/*Global website style
+
+Its Coffee colors
+Brown #230C02
+White #FEFCF7
+Cream #ECDAC4*/
+
+
+/* *****************************************
+  ** ** HERO SECTION -ARTICOLI
+  ** ****************************************/
+
+  #cupofideas {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;  
+    padding: 0;
+    padding-top: 100px;
+  }
+
+#cupofideas .titles { padding: 10px; margin: auto; width: 85%; text-align: left;}
+#cupofideas .titles h1 {font-weight: 600; display: inline;}
+#cupofideas .titles h2 {font-weight: 400; font-size: 1rem; display: inline; margin-left: 20px;}
+
+
+/*---------------------------------------------
+----------------------BLOG BODY------------------*/
+#blog {
+  height: auto;
+}
+
+/* Stili per l'immagine di sfondo fissa */
+#blog .col-lg-4 {
+  overflow: hidden;
+}
+
+#blog .col-lg-4 .front-img {
+  background-image: url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* Stili per il contenitore degli articoli */
+.article-container {
+  overflow-y: auto; /* Abilita lo scrolling verticale se gli articoli sono più lunghi della viewport */
+  height: 100vh; /* Altezza massima pari all'altezza della viewport */
+  scrollbar-width: none; /* Nascondi la scrollbar per i browser che supportano questa proprietà */
+}
+
+/*-----------------ARTICLE EXAPLE. 1--------------------*/
+
+ #blog .item {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #f0ede9;
+}
+
+#blog .item .article {
+  display: flex;
+  flex-direction: column;
+}
+
+#blog .item .article-image {
+  width: auto;
+  height: 100%; /* Altezza dell'immagine */
+  background-color: #f0f0f0; /* Colore di sfondo dell'immagine */
+  border-radius: 8px;
+}
+
+#blog .item .article .username {
+  font-size: 1rem;
+  font-style: italic;
+  color: #777;
+}
+
+#blog .item .article .news-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #230C02;
+}
+
+#blog .item .article .article-description {
+  color: #666;
+  font-weight: 400;
+}
+
+#blog .item .article .interaction-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#blog .item .article .interaction-box {
+  display: flex;
+}
+
+#blog .item .article .comments-container {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+
+#blog .item .article .bi {
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  padding: 0%;
+}
+
+#blog .item .article .comments-text {
+  margin: 0%;
+}

@@ -1,0 +1,398 @@
+/*Global website style
+
+Its Coffee colors
+Brown #230C02
+White #FEFCF7
+Cream #ECDAC4*/
+
+h1,h2,h3 {font-family: "Crimson+Text"; font-weight: bold; color: #230C02; }
+
+h4,h5,h6 {font-family: "DM Sans";}
+
+p {
+  font-family: "DM Sans";
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+
+  /* *****************************************
+  ** ** NAVIGATION MENU
+  ** ****************************************/
+  #navbar {
+    padding: 0px 80px;
+    background-color: #fff;
+    display: flex;
+  } 
+
+  #navbar .navbar-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #navbar .navbar-brand {
+    height: 80px;
+  }
+
+  #navbar .navbar-brand img {height: 80px;}
+
+  #navbar .nav-link {
+      text-align: center;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-weight: 500;
+      margin: 0 20px;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar .nav-link:focus {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #230C02;
+    border-radius: 25px;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .active,
+  .navbar-nav .active:focus,
+  .navbar-nav li:hover > .nav-link {
+    background-color: #230C02;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+.create-button {
+    display: inline-block;
+    padding: 12px 22px;
+    cursor: pointer;
+    background-color: #E75923;
+    border: 1px solid #E75923;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  
+ .create-button:hover {
+    background-color: #fff;
+    border: 1px solid #E75923;
+    text-decoration: none;
+    color: #E75923;
+    transition: all 0.3s;
+  }
+
+  .logout-button {
+    display: inline-block;
+    padding: 12px 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #230C02;
+    color: #230C02;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  
+  .logout-button:hover {
+    background-color: #230C02;
+    border: 1px solid #230C02;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .button {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #230C02;
+    border: 1px solid #230C02;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 1px solid #230C02;
+    text-decoration: none;
+    color: #230C02;
+    transition: all 0.3s;
+  }
+
+
+
+section.blog-news .form input{
+    border-radius: 25px;
+}
+
+
+
+
+/* Media Query per schermi con larghezza massima di 991px (Versione Mobile) */
+@media (max-width: 991px) {
+    #navbar .navbar-nav {
+        flex-direction: column; /* Disposizione verticale degli elementi del menu */
+    }
+
+    #navbar .navbar-nav ul li {
+        padding: 10px; /* Riduzione del padding per gli elementi del menu */
+    }
+
+    .navbar-collapse {
+        display: none; /* Nascondi il menu principale */
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        top: 60px; /* Posiziona il menu ad hamburger al di sotto dell'header */
+        left: 0;
+        z-index: 1000; /* Assicura che il menu sia sopra gli altri elementi */
+    }
+
+    .navbar-collapse.show {
+        display: block; /* Mostra il menu ad hamburger quando è aperto */
+    }
+
+    .navbar-collapse .navbar-nav .nav-link {
+        text-align: center; /* Centra il testo degli elementi del menu */
+        padding: 15px; /* Aggiusta il padding per gli elementi del menu */
+        border-bottom: 1px solid #ccc; /* Aggiungi una linea di separazione tra gli elementi del menu */
+    }
+}
+
+  /*-------- *** Mobile navigation----------------------- */
+  .mobile-nav-toggle {
+    color: #230C02;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {display: block;}
+    .navbar ul {display: none;}
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(51,60,79,0.8);
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    top: 15px; right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 40px; right: 15px; bottom: 15px; left: 15px;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .navbar-mobile ul li a{
+      text-align: center;
+      padding: 10px 30px 10px 30px;
+
+  }
+
+/*-----------------FOOTER STYLE---------------------*/
+.footer {
+    color: #fff;
+    background-color: #230C02;
+  }
+  
+  
+  .footer .container {
+    display: flex;
+    align-items: center;
+  }
+
+  
+/********************MAIN CONTAINER**************************/
+/* Stili di base */
+body {
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+} 
+
+.main {
+    height: 100vh;
+}
+
+.container {
+  width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+/*-----------------------------------------------
+------------LOGIN FORM STYLE-------------------
+--------------------------------------------------*/
+
+/* Stili di base */
+#main-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(125, 92, 68);
+}
+
+#main-profile .container {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-profile .navbar-brand {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#main-profile h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#main-profile .login-form {
+  text-align: center; /* Allinea il contenuto del div login-form al centro */
+}
+
+
+#main-profile .login-form .alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+#main-profile .login-form .alert-danger {
+  background-color: #e19003;
+}
+
+#main-profile .login-form  .alert-success {
+  background-color: #28a745;
+}
+
+/* Stili per i campi del form */
+#main-profile .login-form  .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.form-control:focus {
+  border-color: #e19003;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Stili per il bottone */
+#main-profile .login-form .form-control .button {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 12px 25px;
+  cursor: pointer;
+  background-color: #230C02;
+  border: 1px solid #230C02;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+#main-profile .login-form  .form-control .button:hover {
+  background-color: transparent;
+  border: 1px solid #230C02;
+  text-decoration: none;
+  color: #230C02;
+  transition: all 0.3s;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 576px) {
+  .container {
+      padding: 15px;
+  }
+}
+
+
+
+/**********TABLE STYLE*****************/
+.title {
+  margin-bottom: 20px;
+  display: inline;
+  margin-right: 20px;
+}
+
+table {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.table td {
+  padding: 20px;
+}
+.table th {
+  background-color: #230C02;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.table .approve {
+  text-align: center;
+}
+
+/***********DASHBOARD**************/
+.statistiche-post {
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+  background-color: #230C02;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.statistiche-post .total-post, .statistiche-post .approved-post {
+  height: 50%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+} 
+.statistiche-post .total-post {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.statistiche-post .approved-post {
+  display: flex;
+}
+
+.statistiche-post .approved-post span {
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+
+.statistiche-post h5 {
+  font-size: 4rem;
+}
